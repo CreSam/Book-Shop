@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bookshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="discount">Use code 'SAMUEL40' to get 40% discount on all orders above ₹999/-</div>
+    <nav class="navbar">
+        <div class="logo">Bookshop</div>
+        <div class="search">
+            <input type="text" placeholder="Search by Title, Author or Publisher">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><i class="fa fa-user"></i> Samuel</li>
+                <li><i class="fa fa-shopping-cart"></i></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="search2">
+        <input type="text" placeholder="Search by Title, Author or Publisher">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="trending">
+        <h1>Now Trending</h1>
+        <div id="grid-container">
+            <div class="grid-item">
+                <div class="offer">6%</div>
+                <img class="bookImg" src="https://images-na.ssl-images-amazon.com/images/I/71sBtM3Yi5L.jpg" alt="mind">
+                <button>QUICK VIEW</button>
+                <p class="bookTitle">The Power of Your Subconscious Mind</p>
+                <p class="bookPara">Joseph Murphy</p>
+                <span class="price discount-price">₹1,198</span>
+                <span class="price actual-price">₹1,274</span>
+            </div>
+            <div class="grid-item">
+                <div class="offer">29%</div>
+                <img class="bookImg" src="https://images-na.ssl-images-amazon.com/images/I/81bsw6fnUiL.jpg" alt="rich">
+                <button>QUICK VIEW</button>
+                <p class="bookTitle">Rich Dad Poor Dad</p>
+                <p class="bookPara">Robert T. Kiyosaki</p>
+                <span class="price discount-price">₹391</span>
+                <span class="price actual-price">₹550</span>
+            </div>
+
+            <div class="grid-item">
+                <div class="offer">28%</div>
+                <img class="bookImg" src="https://images-na.ssl-images-amazon.com/images/I/71QKQ9mwV7L.jpg" alt="mind">
+                <button>QUICK VIEW</button>
+                <p class="bookTitle">The Subtle Art Of Not Giving A F*ck</p>
+                <p class="bookPara">Mark Manson</p>
+                <span class="price discount-price">₹359</span>
+                <span class="price actual-price">₹499</span>
+            </div>
+            
+            <div class="grid-item">
+                <div class="offer">6%</div>
+                <img class="bookImg" src="https://images-na.ssl-images-amazon.com/images/I/81fJA-lV9vL.jpg" alt="mind">
+                <button>QUICK VIEW</button>
+                <p class="bookTitle">Chanakya Neeti with Chanakya Sutra Sahit</p>
+                <p class="bookPara">Ashwini Parashar</p>
+                <span class="price discount-price">₹1,013</span>
+                <span class="price actual-price">₹1,078</span>
+            </div>
+            <div class="grid-item">
+                <div class="offer">40%</div>
+                <img class="bookImg" src="https://www.bookgeeks.in/wp-content/uploads/2021/10/400-Days-by-Chetan-Bhagat-1200x1777.jpg" alt="mind">
+                <button>QUICK VIEW</button></img>
+                <p class="bookTitle">400 Days</p>
+                <p class="bookPara">Chetan Bhagat</p>
+                <span class="price discount-price">₹150</span>
+                <span class="price actual-price">₹250</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img class="banner-img" src="./banner.png" alt="banner" srcset="">
+    </div>
+
+    <div class="contact-form">
+        
+        <div class="grid-container">
+            
+            <div class="grid-contact">
+            <form>
+                <h1>Contact Us</h1>
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="eMail">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <div class="grid-contact">
+
+            <img class="contact-img" src="./contact.png" alt="contact" srcset="">
+            <p>Contact :</p>
+
+            <address>
+                <p >sam@bookshop.com</a><br>
+                <p >(+91) 99999 9****</a>
+            </address>
+        </div>
+
+    </div>
+
+    <footer>
+        
+       <p>© 2022 Samuel</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

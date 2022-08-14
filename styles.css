@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: cursive;
+   }
+
+   .discount{
+    text-align: center;
+    background-color: rgb(239, 239, 37);
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+   }
+
+   li {
+    list-style: none;
+   }
+
+   .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #185689;
+    color: #fff;
+   }
+
+   .logo{
+    font-size: 32px;
+   }
+
+   .menu{
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+   }
+
+.menu li:hover{
+    background-color: aliceblue;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    color: #185689;
+}
+
+.menu li{
+    padding: 5px 14px;
+}
+
+.search input[type=text]{
+    width: 500px;
+    padding: 6px;
+  margin-top: 4px;
+  font-size: 17px;
+  border-radius: 12px 0 0 12px;
+    
+}
+
+.search button{
+    cursor: pointer;
+    float: right;
+    margin-left: -2px;
+    padding: 6px;
+  margin-top: 4px;
+  font-size: 17px;
+  border-radius: 0 12px 12px 0;   
+}
+
+.search button:hover{
+    background-color: #99aec9c7;
+}
+
+/* mobile styles */
+input[type=checkbox]{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+.search2{
+    display: none;
+}
+
+footer{
+    margin-top: 15px;
+    background-color: #185689;
+    color: #fff;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* applying styles to mobile devices */
+
+@media (max-width:856px){
+    .search{
+        display: none;
+    }
+  .menu{
+    display: none;
+    position: absolute;
+    background-color: #185689;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 12px;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color:#e6ecf0;
+    transition: 0.3s ease;
+   }
+
+   .menu li+li{
+    margin-top: 12px;
+   }
+
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+
+  .hamburger{
+    display: block;
+  }
+
+.search2{
+    display: block;
+    text-align: center;
+    background-color: #185689;
+    padding: 4px;
+}
+
+.search2 input[type=text]{
+    width: 290px;
+    padding: 6px;
+  margin-top: 4px;
+  font-size: 17px;
+  border-radius: 12px 0 0 12px;
+    
+}
+
+.search2 button{
+    cursor: pointer;
+    float:inline-end;
+    margin-left: -5px;
+    padding: 6px;
+  margin-top: 4px;
+  font-size: 17px;
+  border-radius: 0 12px 12px 0;   
+}
+.search2 button:hover{
+    background-color: #99aec9c7;
+}
+
+}
+
+.trending{
+    margin: 15px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.043);
+    border-radius: 5px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    justify-items: center;
+    justify-content: center;
+  }
+  .grid-item {
+    margin: 5px;
+    width: 200px;
+    background-color: rgba(22, 33, 106, 0.201);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  img{
+    cursor: pointer;
+    width: 115px;
+    border-radius: 5px;
+  }
+.bookTitle{
+    font-size: 13px;
+    font-weight: bold;
+}
+  .bookPara{
+    font-size: 11px;
+  }
+  .grid-item p{
+color: rgba(0, 0, 0, 0.845);
+  }
+
+.grid-item button{
+border-radius: 5px;
+border: none;
+    background: none;
+    cursor: pointer;
+    width: 110px;
+    justify-items: center;
+    background-color: #fff;
+  }
+
+  .grid-item button:hover{
+    color: white;
+    background-color: #e71554;
+  }
+
+  .price{
+    color: #ff0000;
+font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+
+  .actual-price{
+    color: grey;
+    text-decoration-line: line-through;
+  }
+
+  .offer{
+    position: absolute;
+    z-index: 9;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 60px;
+    font-size: 17px;
+    margin-top: -10px;
+    margin-left: 130px;
+  }
+
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color:#185689;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .banner-img{
+    padding: 20px;
+    width: 100%;
+  }
+
+  .contact-form{
+    margin:15px
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .contact-img{
+    margin-top: 20px;
+    width: 250px;
+  }
+
+
+ 
